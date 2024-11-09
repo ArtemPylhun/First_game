@@ -823,7 +823,7 @@ GameObject:
   m_Layer: 0
   m_Name: CollectablesSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnInterval: 2
   _collectable: {fileID: 361175340856854406, guid: bc773a720f7ecbe4ebc9c0d174563102, type: 3}
-  _randomDeltaX: 2
+  _randomDeltaX: 7.7
 --- !u!4 &424502300
 Transform:
   m_ObjectHideFlags: 0
@@ -850,13 +850,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424502298}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.006615431, z: -0, w: 0.9999782}
   m_LocalPosition: {x: -0.009892252, y: 6.13, z: 0.007593923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.758, z: 0}
 --- !u!1001 &434753702
 PrefabInstance:
   m_ObjectHideFlags: 0
