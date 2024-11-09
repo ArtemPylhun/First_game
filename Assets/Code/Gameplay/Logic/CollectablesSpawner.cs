@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Code.Gameplay.Logic
 {
-    public class EnemiesSpawner : MonoBehaviour
+    public class CollectablesSpawner : MonoBehaviour
     {
         [SerializeField] private float _spawnInterval = 2;
 

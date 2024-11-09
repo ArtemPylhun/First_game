@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 424502300}
   - component: {fileID: 424502299}
   m_Layer: 0
-  m_Name: EnemiesSpawner
+  m_Name: CollectablesSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
