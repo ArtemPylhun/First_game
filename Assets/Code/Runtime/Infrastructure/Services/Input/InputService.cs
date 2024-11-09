@@ -4,9 +4,9 @@
     {
         private const string AxisHorizontal = "Horizontal";
 
-        private bool _enabled = true;
+        private bool _enabled;
 
-        public void Enabled() =>
+        public void Enable() =>
             _enabled = true;
         
         public void Disable() =>

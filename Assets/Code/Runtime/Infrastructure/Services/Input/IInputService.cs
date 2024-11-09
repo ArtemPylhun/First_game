@@ -2,7 +2,7 @@
 {
     public interface IInputService
     {
-        void Enabled();
+        void Enable();
         void Disable();
         float GetMovement();
     }
