@@ -1,5 +1,4 @@
-﻿using System;
-using Code.Runtime.Gameplay.Logic;
+﻿using Code.Runtime.Gameplay.Logic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,12 +14,12 @@ namespace Code.Runtime.Gameplay.View.UI
 
         private void Awake()
         {
-            _health.HealthChanged += OnHealthChanged;
+            _health.Changed += OnHealthChanged;
         }
 
         private void OnDestroy()
         {
-            _health.HealthChanged -= OnHealthChanged;
+            _health.Changed -= OnHealthChanged;
         }
         
         private void OnHealthChanged() =>
