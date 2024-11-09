@@ -1,18 +1,24 @@
+using Code.Runtime.Infrastructure.Services.Input;
 using UnityEngine;
+using Zenject;
 
 namespace Code.Runtime.Gameplay.Logic
 {
     public class PlayerInputX : MonoBehaviour
     {
-        private const string AxisHorizontal = "Horizontal";
-
         [SerializeField] 
         private MoverX _mover;
-
+        private IInputService _inputService;
+        
+        [Inject]
+        private void Construct(IInputService inputService) =>
+            _inputService = inputService;
+        
+        
         void Update()
         {
-            float input = Input.GetAxis(AxisHorizontal);
-            _mover.Move(input);
+            float movement = _inputService.GetMovement();
+            _mover.Move(movement);
         }
     }
 }
