@@ -1,4 +1,5 @@
-﻿using Code.Runtime.Gameplay.Logic;
+﻿using System;
+using Code.Runtime.Gameplay.Logic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,10 +11,19 @@ namespace Code.Runtime.Gameplay.View.UI
         private Image _image;
 
         [SerializeField] 
-        private Health health;
-        private void Update()
+        private Health _health;
+
+        private void Awake()
         {
-            _image.fillAmount = health.CurrentHealth / health.MaxHealth;
+            _health.HealthChanged += OnHealthChanged;
         }
+
+        private void OnDestroy()
+        {
+            _health.HealthChanged -= OnHealthChanged;
+        }
+        
+        private void OnHealthChanged() =>
+            _image.fillAmount = _health.CurrentHealth / _health.MaxHealth;
     }
 }

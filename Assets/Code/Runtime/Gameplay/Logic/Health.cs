@@ -10,6 +10,8 @@ namespace Code.Runtime.Gameplay.Logic
         public float CurrentHealth => _currentHealth;   
         public float MaxHealth { get; private set; }
 
+        public event Action HealthChanged;
+        
         private void Start()
         {
             MaxHealth = _currentHealth;
