@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using Code.Runtime.Extensions;
-using Code.Runtime.Infrastructure.Services;
+using Code.Runtime.Infrastructure.Services.Random;
 using UnityEngine;
 using Zenject;
 

@@ -1,4 +1,4 @@
-﻿namespace Code.Runtime.Infrastructure.Services
+﻿namespace Code.Runtime.Infrastructure.Services.Random
 {
     public interface IRandomService
     {
