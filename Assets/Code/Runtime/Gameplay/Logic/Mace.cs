@@ -7,9 +7,13 @@ namespace Code.Runtime.Gameplay.Logic
         [SerializeField]
         private float _healthToSubstract = 10;
 
+        public bool IsCollected { get; private set; }
         public void Collect(Collector collector)
         {
-            collector.GetComponent<Health>().Subtract(_healthToSubstract);
+            IsCollected = true;
+            collector
+                .GetComponent<Health>()
+                .Subtract(_healthToSubstract);
         }
     }
 }
