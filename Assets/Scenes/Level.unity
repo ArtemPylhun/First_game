@@ -391,6 +391,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 65917805}
+  _rigidbody: {fileID: 65917796}
+  _collider: {fileID: 65917795}
+  _forceOnDeath: 10
 --- !u!1 &190281878
 GameObject:
   m_ObjectHideFlags: 0
