@@ -1,16 +1,16 @@
 ﻿using System.Collections;
-using Code.Extensions;
+using Code.Runtime.Extensions;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Code.Gameplay.Logic
+namespace Code.Runtime.Gameplay.Logic
 {
     public class CollectablesSpawner : MonoBehaviour
     {
         [SerializeField] private float _spawnInterval = 2;
         [SerializeField] private GameObject _collectable;
 
-        [SerializeField] private int _randomDeltaX = 2;
+        [SerializeField] private float _randomDeltaX = 2;
+        public float RandomDeltaX => _randomDeltaX;
 
         private IEnumerator Start()
         {

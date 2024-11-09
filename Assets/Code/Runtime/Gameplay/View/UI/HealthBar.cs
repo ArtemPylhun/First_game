@@ -1,8 +1,8 @@
-﻿using Code.Gameplay.Logic;
+﻿using Code.Runtime.Gameplay.Logic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Code.Gameplay.View.UI
+namespace Code.Runtime.Gameplay.View.UI
 {
     internal class HealthBar : MonoBehaviour
     {

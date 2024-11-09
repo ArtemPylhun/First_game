@@ -1,7 +1,6 @@
-﻿using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Code.Gameplay.Logic
+namespace Code.Runtime.Gameplay.Logic
 {
     public class Collector: MonoBehaviour
     {

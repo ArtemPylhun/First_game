@@ -1,7 +1,7 @@
-﻿using Code.Gameplay.Logic;
+﻿using Code.Runtime.Gameplay.Logic;
 using UnityEngine;
 
-namespace Code.Gameplay.View
+namespace Code.Runtime.Gameplay.View
 {
     internal sealed class PlayerAnimator : MonoBehaviour
     {

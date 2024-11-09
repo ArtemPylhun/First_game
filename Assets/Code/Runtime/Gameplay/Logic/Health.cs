@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Code.Gameplay.Logic
+namespace Code.Runtime.Gameplay.Logic
 {
     public class Health: MonoBehaviour
     {

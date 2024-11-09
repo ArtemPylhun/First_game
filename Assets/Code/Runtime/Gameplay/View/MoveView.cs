@@ -1,9 +1,9 @@
 ﻿using System;
-using Code.Extensions;
-using Code.Gameplay.Logic;
+using Code.Runtime.Extensions;
+using Code.Runtime.Gameplay.Logic;
 using UnityEngine;
 
-namespace Code.Gameplay.View
+namespace Code.Runtime.Gameplay.View
 {
     public class MoveView : MonoBehaviour
     {
