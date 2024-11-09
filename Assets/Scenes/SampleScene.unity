@@ -137,6 +137,8 @@ GameObject:
   - component: {fileID: 65917800}
   - component: {fileID: 65917799}
   - component: {fileID: 65917801}
+  - component: {fileID: 65917802}
+  - component: {fileID: 65917803}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -299,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 65917796}
-  _speed: 0
+  _speed: 5
 --- !u!114 &65917801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +314,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ed732a16c7449f93e46bc39527ea31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moverX: {fileID: 65917800}
+--- !u!95 &65917802
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65917794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a741d85c6646ff4bb916e62b00b977c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &65917803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65917794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c835a0c284a14da488dc94d5d8bda630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 65917802}
   _moverX: {fileID: 65917800}
 --- !u!1 &301984574
 GameObject:
