@@ -181,7 +181,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.008}
-  m_Size: {x: 0.73, y: 0.76}
+  m_Size: {x: 0.73, y: 0.73}
   m_Direction: 0
 --- !u!50 &65917796
 Rigidbody2D:
@@ -840,7 +840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnInterval: 2
-  _enemy: {fileID: 361175340856854406, guid: bc773a720f7ecbe4ebc9c0d174563102, type: 3}
+  _collectable: {fileID: 361175340856854406, guid: bc773a720f7ecbe4ebc9c0d174563102, type: 3}
+  _randomDeltaX: 2
 --- !u!4 &424502300
 Transform:
   m_ObjectHideFlags: 0
