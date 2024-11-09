@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Code.Gameplay.Logic
 {
-    internal sealed class Collector: MonoBehaviour
+    public class Collector: MonoBehaviour
     {
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (other.gameObject.TryGetComponent(out ICollectable collectable))
             {
-                collectable.Collect();
+                collectable.Collect(this);
             }
         }
     }
