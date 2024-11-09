@@ -1,27 +1,25 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace Code.Gameplay.Logic
 {
-    public class EnemiesSpawner:MonoBehaviour
+    public class EnemiesSpawner : MonoBehaviour
     {
-        [SerializeField]
-        private float _spawnInterval = 2;
-        
-        [SerializeField]
-        private GameObject _enemy;
-        
-        private float _timer;
+        [SerializeField] private float _spawnInterval = 2;
 
-        private void Start() => 
-            _timer = _spawnInterval;
-        
-        private void Update()
+        [SerializeField] private GameObject _enemy;
+
+        private void Start()
         {
-            _timer -= Time.deltaTime;
-            if (_timer <= 0)
+            StartCoroutine(SpawnEnemyCoroutine());
+        }
+
+        private IEnumerator SpawnEnemyCoroutine()
+        {
+            while (true)
             {
+                yield return new WaitForSeconds(_spawnInterval);
                 SpawnEnemy();
-                _timer = _spawnInterval;
             }
         }
 
