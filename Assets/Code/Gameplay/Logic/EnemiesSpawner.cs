@@ -9,12 +9,7 @@ namespace Code.Gameplay.Logic
 
         [SerializeField] private GameObject _enemy;
 
-        private void Start()
-        {
-            StartCoroutine(SpawnEnemyCoroutine());
-        }
-
-        private IEnumerator SpawnEnemyCoroutine()
+        private IEnumerator Start()
         {
             while (true)
             {
